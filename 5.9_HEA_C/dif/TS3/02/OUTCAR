@@ -1,0 +1,101 @@
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build Feb 14 2020 11:11:14) complex          
+  
+ executed on             LinuxIFC date 2022.03.02  12:32:17
+ running on   96 total cores
+ each image running on   48 cores
+ distrk:  each k-point on   48 cores,    1 groups
+ distr:  one band on NCORES_PER_BAND=   4 cores,   12 groups
+
+
+--------------------------------------------------------------------------------------------------------
+
+
+ INCAR:
+
+ ----------------------------------------------------------------------------- 
+|                                                                             |
+|  ADVICE TO THIS USER RUNNING 'VASP/VAMP'   (HEAR YOUR MASTER'S VOICE ...):  |
+|                                                                             |
+|      You have a (more or less) 'small supercell' and for smaller cells      |
+|      it is recommended  to use the reciprocal-space projection scheme!      |
+|      The real space optimization is not  efficient for small cells and it   |
+|      is also less accurate ...                                              |
+|      Therefore set LREAL=.FALSE. in the  INCAR file                         |
+|                                                                             |
+ ----------------------------------------------------------------------------- 
+
+
+ ----------------------------------------------------------------------------- 
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|     The real-space-projection scheme for the treatment of the nonlocal      |
+|     pseudopotentials has been switched on -- but on file POTCAR I have      |
+|     not found any entries signalling me that you have ever performed a      |
+|     real-space optimization of all nonlocal projectors! BE WARNED that      |
+|     a calculation using the real-space-projection scheme together with      |
+|     nonlocal projectors which were not real-space-optimized (according      |
+|     to the plane-wave-cutoff used in this calculation) might give more      |
+|     or less inaccurate results                                              |
+|     I hope you know what you are doing                                      |
+|                                                                             |
+ ----------------------------------------------------------------------------- 
+
+ 
+ 
+ POSCAR: 10.56                                   
+  positions in direct lattice
+  velocities in direct lattice
+ exchange correlation table for  LEXCH =        0
+   RHO(1)=    0.500       N(1)  =     2000
+   RHO(2)=  100.500       N(2)  =     4000
+
+ VTST: version 3.2, (02/03/18)
+
+ CHAIN: initializing optimizer
+ 
+ OPT: Using VASP QUASI-newton optimizer
+ CHAIN: Read ICHAIN            0
+ CHAIN: Running the NEB
+ NEB:          SPRING     -5.000000
+ NEB:          LCLIMB      T
+ NEB:     LTANGENTOLD      F
+ NEB:           LDNEB      F
+ NEB:        LDNEBORG      F
+ NEB:        LNEBCELL      F
+ NEB:          EFIRST      0.000000
+ NEB:           ELAST      0.000000
+ 
+ POSCAR: 10.56                                   
+  positions in direct lattice
+  velocities in direct lattice
+ 
+ POSCAR: 10.56                                   
+  positions in direct lattice
+  velocities in direct lattice
+ 
+
+
+--------------------------------------------------------------------------------------------------------
+
+
+ ion  position               nearest neighbor table
+ 
+  LATTYP: Found a hexagonal cell.
+ ALAT       =    10.5600004196
+ C/A-ratio  =     2.0833332505
+  
+  Lattice vectors:
+  
+ A1 = (   5.2800002098,  -9.1452286274,   0.0000000000)
+ A2 = ( -10.5600004196,   0.0000000000,   0.0000000000)
+ A3 = (   0.0000000000,   0.0000000000, -22.0000000000)
+
+
+Analysis of symmetry for initial positions (statically):
+=====================================================================

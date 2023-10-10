@@ -1,0 +1,147 @@
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build Feb 14 2020 11:11:14) complex          
+  
+ executed on             LinuxIFC date 2022.03.03  12:59:54
+ running on   96 total cores
+ each image running on   48 cores
+ distrk:  each k-point on   48 cores,    1 groups
+ distr:  one band on NCORES_PER_BAND=   4 cores,   12 groups
+
+
+--------------------------------------------------------------------------------------------------------
+
+
+ INCAR:
+ 
+ 
+ POSCAR: 10.56                                   
+  positions in direct lattice
+  velocities in direct lattice
+ exchange correlation table for  LEXCH =        0
+   RHO(1)=    0.500       N(1)  =     2000
+   RHO(2)=  100.500       N(2)  =     4000
+
+ VTST: version 3.2, (02/03/18)
+
+ CHAIN: initializing optimizer
+ 
+ OPT: Using VASP QUASI-newton optimizer
+ CHAIN: Read ICHAIN            0
+ CHAIN: Running the NEB
+ NEB:          SPRING     -5.000000
+ NEB:          LCLIMB      T
+ NEB:     LTANGENTOLD      F
+ NEB:           LDNEB      F
+ NEB:        LDNEBORG      F
+ NEB:        LNEBCELL      F
+ NEB:          EFIRST      0.000000
+ NEB:           ELAST      0.000000
+ 
+ POSCAR: 10.56                                   
+  positions in direct lattice
+  velocities in direct lattice
+ 
+ POSCAR: 10.56                                   
+  positions in direct lattice
+  velocities in direct lattice
+ 
+
+
+--------------------------------------------------------------------------------------------------------
+
+
+ ion  position               nearest neighbor table
+ 
+  LATTYP: Found a hexagonal cell.
+ ALAT       =    10.5600004196
+ C/A-ratio  =     2.0833332505
+  
+  Lattice vectors:
+  
+ A1 = (   5.2800002098,  -9.1452286274,   0.0000000000)
+ A2 = ( -10.5600004196,   0.0000000000,   0.0000000000)
+ A3 = (   0.0000000000,   0.0000000000, -22.0000000000)
+
+
+Analysis of symmetry for initial positions (statically):
+=====================================================================
+ Subroutine PRICEL returns:
+ Original cell was already a primitive cell.
+ 
+
+ Routine SETGRP: Setting up the symmetry group for a 
+ hexagonal supercell.
+
+
+ Subroutine GETGRP returns: Found  0 space group operations
+ (whereof  0 operations were pure point group operations)
+ out of a pool of 24 trial point group operations.
+
+
+The static configuration has the point symmetry     .
+
+
+Analysis of symmetry for dynamics (positions and initial velocities):
+=====================================================================
+ Subroutine PRICEL returns:
+ Original cell was already a primitive cell.
+ 
+
+ Routine SETGRP: Setting up the symmetry group for a 
+ hexagonal supercell.
+
+
+ Subroutine GETGRP returns: Found  0 space group operations
+ (whereof  0 operations were pure point group operations)
+ out of a pool of 24 trial point group operations.
+
+
+The dynamic configuration has the point symmetry     .
+
+
+Analysis of structural, dynamic, and magnetic symmetry:
+=====================================================================
+ Subroutine PRICEL returns:
+ Original cell was already a primitive cell.
+ 
+
+ Routine SETGRP: Setting up the symmetry group for a 
+ hexagonal supercell.
+
+
+ Subroutine GETGRP returns: Found  0 space group operations
+ (whereof  0 operations were pure point group operations)
+ out of a pool of 24 trial point group operations.
+
+
+The magnetic configuration has the point symmetry     .
+
+
+ Subroutine INISYM returns: Found  0 space group operations
+ (whereof  0 operations are pure point group operations),
+ and found     1 'primitive' translations
+
+ 
+ 
+ KPOINTS: mesh auto                               
+
+Automatic generation of k-mesh.
+ 
+ Subroutine IBZKPT returns following result:
+ ===========================================
+ 
+ Found      4 irreducible k-points:
+ 
+ Following reciprocal coordinates:
+            Coordinates               Weight
+  0.000000  0.000000  0.000000      1.000000
+  0.500000  0.000000  0.000000      1.000000
+  0.000000  0.500000  0.000000      1.000000
+  0.500000  0.500000  0.000000      1.000000
+ 
+ Following cartesian coordinates:
+            Coordinates               Weight
+  0.000000  0.000000  0.000000      1.000000
+  0.047348 -0.027337  0.000000      1.000000
+  0.000000  0.054673  0.000000      1.000000
+  0.047348  0.027337  0.000000      1.000000
+ 
